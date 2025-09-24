@@ -1,11 +1,17 @@
-import React from "react";
-import { BrowserRouter, Router, Route } from "react-router";
+import { BrowserRouter, Route, Routes } from "react-router";
+import Navbar from "./components/Navbar";
+import HomePage from "./pages/HomePage";
+import Footer from "./components/Footer";
+import AuthPage from "./pages/AuthPage";
 export default function App() {
   return (
     <BrowserRouter>
-      <Router>
-        
-      </Router>
+      <Navbar />
+      <Routes>
+        <Route path='/' element={<HomePage />} />
+        <Route path='/login' element={<AuthPage />} />
+      </Routes>
+      <Footer />
     </BrowserRouter>
   );
 }

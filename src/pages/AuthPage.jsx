@@ -1,7 +1,6 @@
 import React, { useState } from "react";
-import Wrapper from "../components/Wrapper"
-import Logincomponenet from "../components/Logincomponenet";
-import RegisterComponet from "../components/RegisterComponet";
+import LoginCard from "../components/LoginCard";
+import RegisterCard from "../components/RegisterCard";
 
 export default function AuthPage() {
     const [tab, setTab] = useState("login");
@@ -49,12 +48,12 @@ export default function AuthPage() {
 
                                 {/* Login Form */}
                                 {tab === "login" && (
-                                    <Logincomponenet/>
+                                    <LoginCard/>
                                 )}
 
                                 {/* Register Form */}
                                 {tab === "register" && (
-                                   < RegisterComponet/>
+                                   < RegisterCard/>
                                 )}
                             </div>
                         </div>

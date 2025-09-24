@@ -1,7 +1,7 @@
 import React from "react";
 import Button from "./Button";
 
-function Logincomponenet() {
+function LoginCard() {
     return (
         <div>
             <form className="space-y-6">
@@ -129,4 +129,4 @@ function Logincomponenet() {
     );
 }
 
-export default Logincomponenet;
+export default LoginCard;
